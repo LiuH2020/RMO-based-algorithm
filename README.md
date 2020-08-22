@@ -2,12 +2,15 @@
 The RMO-based algorithm could be used to identify the origin of brain metastasis tumors by the within-sample relative methylation orderings (RMOs) of the CpG sites.
 # File Description
 *Function
+
 A folder. This includes three R function codes used in program_code.R. See Usage for specific usage of each function.
 
 *ReversalPair
+
 A folder. This includes the reversal CpG site pairs used to identify the origin of brain metastases in this study.
 
 *program_code.R
+
 An R code for accurate identification of the origin of brain metastases in this study
 # Usage
 *selec.stable.pair(Beta,cut_off)
@@ -24,6 +27,7 @@ Output
 |The output file was stable CpG site pairs for the analyzed cancer type. The output file was a data.frame with two columns. For each row, the methylaton level of the CpG site in the first column was stably higher than that of the GpG site in the second column.|
 
 *classification(reversal_pair,Beta,reversal_pair_cancer)
+
 Input
 |Arguments|Description|
 |---------|-----------|
@@ -41,6 +45,7 @@ A list of three elements
 |Output$existence_reversal_pair|A list of reversal pairs. It outputs the reversal pairs available in the input methylation profiles.|
 
 *calculate.similarity(reversal_pair,Beta,reversal_pair_cancer)
+
 Input
 |Arguments|Description|
 |---------|-----------|
