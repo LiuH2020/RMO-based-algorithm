@@ -23,6 +23,7 @@ Input
 |reversal_pair_cancer|A cancer type. For the input reversal_pair, the methylaton level of the CpG sites in the first column are stably higher than that of the corresponding GpG sites in the second column, which occurred in this cancer type.| 
 
 Output
+
 A list of three elements
 |Name|Description|
 |---------|-----------|
