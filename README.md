@@ -10,8 +10,10 @@ Input
 |cut_off|The criteria for identifying stable CpG site pairs in this cancer type. The default setting of freq is 0.95.|
 
 Output
+|Description|
+|-----------|
 |The output file was stable CpG site pairs for the analyzed cancer type. The output file was a data.frame with two columns. For each row, the methylaton level of the CpG site in the first column was stably higher than that of the GpG site in the second column.|
-|------|
+
 
 classification(reversal_pair,Beta,reversal_pair_cancer)
 Input
