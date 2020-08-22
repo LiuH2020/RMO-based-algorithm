@@ -1,4 +1,4 @@
-selec.stable.pair<-function(Beta,cut_off=0.99){
+selec.stable.pair<-function(Beta,cut_off=0.95){
   library(data.table)
   path<-getwd()
   time<-as.numeric(Sys.time())
