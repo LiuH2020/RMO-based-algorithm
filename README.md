@@ -2,11 +2,14 @@
 The RMO-based algorithm could be used to identify the origin of brain metastasis tumors by the within-sample relative methylation orderings (RMOs) of the CpG sites.
 # Usage
 selec.stable.pair(Beta,cut_off)
+
 Input
 |Arguments|Description|
 |---------|-----------|
 |Beta|The DNA methylation profiles of samples of a specific cancer type. The row name of methylation profiles was CpG probe name, and the column name of methylation profiles was sample ID (or sample name).|
-cut_off	The criteria for identifying stable CpG site pairs in this cancer type. The default setting of freq is 0.95.
+|---------|-----------|
+|cut_off|The criteria for identifying stable CpG site pairs in this cancer type. The default setting of freq is 0.95.|
+
 
 Output
 The output file was stable CpG site pairs for the analyzed cancer type. The output file was a data.frame with two columns. For each row, the methylaton level of the CpG site in the first column was stably higher than that of the GpG site in the second column.
