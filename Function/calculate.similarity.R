@@ -20,7 +20,7 @@ calculate.similarity<-function(reversal_pair,Beta,reversal_pair_cancer=NULL){
     existence_pair[[i]] <- reversal_pair[[i]][pair_existence,]
   }
   names(existence_pair) <- names(reversal_pair)
-  colnames(similarity) <- sapply(strsplit(names(reversal_pair),'-'),function(x) x[2])
+  colnames(similarity) <- gsub('[^a-zA-Z]','',gsub('pair','',gsub(reversal_pair_cancer,'',names(reversal_pair))))
   rownames(similarity) <- colnames(Beta)
   
   cancer_highest_similarity_index <- apply(similarity,1,order)[length(reversal_pair),]
